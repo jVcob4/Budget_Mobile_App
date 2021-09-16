@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My_Savings</string>
+
+    <string-array name="expenses">
+        <item>Kategoria</item>
+        <item>Jedzenie</item>
+        <item>Mieszkanie/Dom</item>
+        <item>Transport</item>
+        <item>Telekomunikacja</item>s
+        <item>Opieka Zdrowotna</item>
+        <item>Ubrania</item>
+        <item>Higiena</item>
+        <item>Dzieci</item>
+        <item>Rozrywka</item>
+        <item>Inne Wydatki</item>
+    </string-array>
+</resources>

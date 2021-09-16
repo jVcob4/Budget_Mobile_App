@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name2">My_Savings</string>
+
+    <string-array name="incomes">
+        <item>Kategoria</item>
+        <item>Wynagrodzenie</item>
+        <item>Wynagrodzenie Partnera/Partnerki</item>
+        <item>Premia</item>
+        <item>Odsetki Bankowe</item>
+        <item>Sprzedaż</item>
+        <item>Oszczędności</item>
+        <item>Inne Przychody</item>
+    </string-array>
+</resources>

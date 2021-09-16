@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/activitymain_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/custom_button_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activitymain_banner"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activitymain_mainmenu_Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/main"
+        app:layout_constraintBottom_toBottomOf="@+id/activitymain_imageView"
+        app:layout_constraintStart_toStartOf="@+id/activitymain_imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activitymain_budget_Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/wallet"
+        app:layout_constraintBottom_toBottomOf="@+id/activitymain_imageView"
+        app:layout_constraintStart_toStartOf="@+id/activitymain_imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activitymain_addexpense_Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/activitymain_imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activitymain_profile_Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="@+id/activitymain_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/activitymain_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kaleko"
+        android:gravity="center_horizontal"
+        android:text="My Savings"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="410dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/activitymain_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activitymain_banner">
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_2"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Budżet"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activitymain_budget_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_1"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0 zł"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activitymain_DayDescription_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Dzień"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activitymain_Day_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0 zł"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activitymain_WeekDescription_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_2"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Tydzień"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activitymain_Week_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_1"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0 zł"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activitymain_MonthDescription_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Miesiąc"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activitymain_Month_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0 zł"
+                android:textColor="@color/black"
+
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_2"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Pozostało"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activitymain_savings_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_1"
+                android:fontFamily="@font/kaleko"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0 zł"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/activitymain_add_FloatingButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/add"
+        app:backgroundTintMode="src_atop"
+        app:layout_constraintBottom_toTopOf="@+id/activitymain_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.307"
+        android:visibility="gone"
+        app:rippleColor="#00FFFFFF" />
+    "/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/activityprofile_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kaleko"
+        android:gravity="center"
+        android:text=""
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activityprofile_signOut_Button"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/custom_button_1"
+        android:fontFamily="@font/kaleko"
+        android:text="LOGOUT"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityprofile_deleteAccount_Button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activityprofile_deleteAccount_Button"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button_1"
+        android:fontFamily="@font/kaleko"
+        android:text="DELETE ACCOUNT"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityprofile_TextView"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <ImageView
+        android:id="@+id/activityprofile_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/custom_button_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityprofile_banner_TextView"
+        app:layout_constraintVertical_bias="1.0" />,
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activityprofile_mainmenu_Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/main"
+        app:layout_constraintBottom_toBottomOf="@+id/activityprofile_imageView"
+        app:layout_constraintStart_toStartOf="@+id/activityprofile_imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activityprofile_budget_Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/wallet"
+        app:layout_constraintBottom_toBottomOf="@+id/activityprofile_imageView"
+        app:layout_constraintStart_toStartOf="@+id/activityprofile_imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activityprofile_expense_Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/activityprofile_imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activityprofile_profile_Button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="@+id/activityprofile_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/activityprofile_banner_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kaleko"
+        android:gravity="center_horizontal"
+        android:text="Mój Profil"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

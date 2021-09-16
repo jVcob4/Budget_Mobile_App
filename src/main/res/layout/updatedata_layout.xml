@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+             android:layout_margin="10dp"
+             android:orientation="vertical"
+             android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button_2"
+        android:fontFamily="@font/kaleko"
+        android:gravity="center"
+        android:text="Edytuj Element"
+        android:textColor="@color/white"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/updatedatalayout_itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nazwa"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:fontFamily="@font/kaleko"
+        android:textSize="20dp"
+        android:background="@drawable/custom_background_1"
+        android:layout_marginLeft="5dp"
+
+        />
+
+    <EditText
+        android:id="@+id/updatedatalayout_amount_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wprowadź Kwotę"
+        android:fontFamily="@font/kaleko"
+        android:textColor="@color/black"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/updatedatalayout_note_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dodaj Opis"
+        android:fontFamily="@font/kaleko"
+        android:textColor="@color/black"
+        android:inputType="textCapSentences"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/updatedatalayout_delete_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/kaleko_bold"
+                android:text="Usuń"
+                android:textColor="@color/white"
+                app:backgroundTint="#98C7E0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/updatedata_update_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/kaleko_bold"
+                android:text="Zaktualizuj"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:backgroundTint="#98C7E0" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
